@@ -7,27 +7,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/SimsLife"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
         android:text="SimsLife"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="235dp"
-        android:layout_marginEnd="133dp"
+        android:id="@+id/SimsNP"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="66dp"
         android:text="Nouvelle partie"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -35,25 +33,74 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="160dp"
+        android:layout_marginBottom="60dp"
         android:text="Quitter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="150dp"
+        android:id="@+id/SimsContinuer"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="15dp"
         android:text="Continuer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/SimsTrophees"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Trophées"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SimsNP"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/SimsTrophees"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Thegame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Thegame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine" />
+
+    <Button
+        android:id="@+id/ThegameNP"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="66dp"
+        android:text="Nouvelle partie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine" />
+
+    <Button
+        android:id="@+id/ThegameTrophee"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="15dp"
+        android:text="Trophées"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
